@@ -1,0 +1,7 @@
+%tr
+  %td= show_dont_tell.title
+  %td= show_dont_tell.description
+  %td= link_to 'Show', show_dont_tell
+  %td= link_to 'Edit', edit_show_dont_tell_path(show_dont_tell)
+  %td= link_to 'Destroy', show_dont_tell, method: :delete,
+    data: { confirm: 'Are you sure?' }

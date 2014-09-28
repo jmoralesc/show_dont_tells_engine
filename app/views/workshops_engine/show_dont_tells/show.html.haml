@@ -1,0 +1,10 @@
+%p#notice= notice
+%p
+  %strong Title:
+  = @show_dont_tell.title
+%p
+  %strong Description:
+  = @show_dont_tell.description
+= link_to 'Edit', edit_show_dont_tell_path(@show_dont_tell)
+|
+= link_to 'Back', show_dont_tells_path
