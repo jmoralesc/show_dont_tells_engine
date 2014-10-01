@@ -47,7 +47,11 @@ module ShowDontTellsEngine
     end
     
     def show_dont_tell_params
-      params.require(:show_dont_tell).permit(:title)
+      params.require(:show_dont_tell).permit(
+        :date, presentations_attributes: [ :id,
+        :title, :description, :user_id,
+        :show_dont_tell_id, :_destroy
+        ])
     end
   end
 end
